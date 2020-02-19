@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="welcome.css">
-		<title>welcome</title>
-	</head>
-	<body>
-		<p id="naam">vul hier uw naam in</p>
-		<input type = "text"
-                 id = "naamVakje"
-                 value = "text here" />
-		<p id="e-mail">vul hier uw e-mail in</p>
-		<input type = "text"
-                 id = "e-mailVakje"
-                 value = "text here" />
-	</body>
+<head>
+	<link rel="stylesheet" type="text/css" href="welcome.css">
+	<title>welcome</title>
+</head>
+<body>
+	<form action="welcome.php" method="GET">
+		<label for="gebruikersnaam">gebruikersnaam:</label><br>
+		<input type="text"  id="Naam" name="naam"><br>
+
+		<label for="email">e-mail</label><br>
+		<input type="email" id="Email" name="email"><br>
+		
+		<input type="submit" name="submit" id="submit">
+	</form>
+</body>
 </html>
